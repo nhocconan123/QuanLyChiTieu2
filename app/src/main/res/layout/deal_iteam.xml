@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:elevation="4dp">
+        <RelativeLayout
+            android:id="@+id/layoutIteam"
+            android:padding="8dp"
+            android:background="?android:selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/im"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="48dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_height="48dp" />
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_toRightOf="@+id/im"
+                android:text="mua xách"
+                android:layout_toLeftOf="@+id/price"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvNote"
+                android:layout_toRightOf="@+id/im"
+                android:layout_below="@+id/tvname"
+                android:text="mua xách"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="2000"
+                android:layout_toLeftOf="@+id/imageviewDelete"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/imageviewEdit"
+                android:layout_alignParentRight="true"
+                android:src="@android:drawable/ic_menu_edit"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <ImageView
+                android:id="@+id/imageviewDelete"
+                android:layout_alignParentRight="true"
+                android:src="@android:drawable/ic_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/imageviewEdit"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
